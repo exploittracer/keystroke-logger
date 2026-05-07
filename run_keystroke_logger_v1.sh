@@ -43,9 +43,6 @@ else
 fi
 
 mkdir output
-cd output
-touch keys.txt
-cd ..
 
 echo "[+] Running $PROGRAM_NAME..."
 python3 "$PROGRAM_NAME"
