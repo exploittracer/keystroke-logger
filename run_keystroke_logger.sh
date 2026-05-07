@@ -18,5 +18,6 @@ source venv/bin/activate
 
 mkdir output
 
+echo "[+] Running $PROGRAM_NAME..."
 python3 "$PROGRAM_NAME"
 deactivate
