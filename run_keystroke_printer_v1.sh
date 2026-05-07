@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Configuration
-# REPO_URL="https://github.com/username/repository"  # without .git
-# PROGRAM_NAME="main.py"
-
 REPO_URL="https://github.com/exploittracer/keystroke-logger"
 PROGRAM_NAME="keystroke_printer.py"
 
